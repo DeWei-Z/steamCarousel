@@ -1,0 +1,10 @@
+*{margin:0;padding:0}
+li{list-style:none}
+img{vertical-align:top;border:none}
+.platform{
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(27,40,56);
+    display: flex;
+    justify-content: center;
+}

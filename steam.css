@@ -1,0 +1,124 @@
+*{margin:0;padding:0}
+li{list-style:none}
+img{vertical-align:top;border:none}
+.steam{
+   
+    height: 400px;
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+
+.arrowLeft{
+    width: 40px;
+    height: 100px;
+    background: linear-gradient( to right, rgba( 0, 0, 0, 0.3) 5%,rgba( 0, 0, 0, 0) 95%);
+    align-self: center;   
+}
+
+.arrowLeft:hover{
+    background: linear-gradient( to right, rgba( 171, 218, 244, 0.3) 5%,rgba( 171, 218, 244, 0) 95%);
+    cursor: pointer;
+}
+.arrowLeft>div{
+    background-image: url(./images/arrows.png);
+    background-color:transparent;
+    background-repeat: no-repeat;
+    background-position: -23px center;
+    width: 25px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 8px;
+    margin-bottom: 30px;
+    margin-right: 7px;
+   
+}
+
+.arrowRight{
+    width: 40px;
+    height: 100px;
+    background: linear-gradient( to left, rgba( 0, 0, 0, 0.3) 5%,rgba( 0, 0, 0, 0) 95%);
+    align-self: center;
+}
+
+.arrowRight>div{
+    background-image: url(./images/arrows.png);
+    background-color:transparent;
+    background-repeat: no-repeat;
+    background-position: 2px center;
+    width: 25px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 8px;
+    margin-bottom: 30px;
+    margin-right: 7px;
+   
+}
+.arrowRight:hover{
+    background: linear-gradient( to left, rgba( 171, 218, 244, 0.3) 5%,rgba( 171, 218, 244, 0) 95%);
+    cursor: pointer;
+}
+
+
+.steamContent{
+    background-color:azure;
+    height: 400px;
+    width: 800px;
+    
+
+}
+
+.steamContent>a{
+    display: block;
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    z-index: 0;
+    
+}
+.steamContent>a:first-child{
+    z-index: 10;
+}
+
+
+.steamContent img{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+   
+}
+
+.panels{
+    width: 800px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    font-size: 0;
+}
+
+.panels>div{
+   
+        display: inline-block;
+        margin: 10px 2px;
+        width: 15px;
+        height: 9px;
+        border-radius: 2px;
+        transition: background-color 0.2s;
+        background-color: hsla(202,60%,100%,0.2);
+        cursor: pointer;
+    
+}
+
+.panels>div:hover{
+    background-color:hsla(202,60%,100%,0.4) ;
+}
+
+.panels .focus{
+    background-color: hsla(202,60%,100%,0.5) ;
+    
+}
