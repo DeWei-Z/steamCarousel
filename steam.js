@@ -28,7 +28,8 @@ class Carousel{
       
     bind(){
         this.pre.onclick=e=>{
-           
+            if(this.animated)return;
+            this.resetTimer();
            
             let index=this.preIndex;
             let thisIndex=this.index;
@@ -37,7 +38,9 @@ class Carousel{
         }
 
         this.next.onclick=e=>{
-           
+            if(this.animated)return;
+            this.resetTimer();
+            
             let index=this.nextIndex;
             let thisIndex=this.index;
             this.setDots(index);
